@@ -1,4 +1,10 @@
 # Display scatter plot between two variables x and y 
+def lib_for_data_visulization():
+    import matplotlib.pyplot as plt  # For scatter plots and visualization
+    import numpy as np               # For numerical calculations, e.g., polyfit
+    import pandas as pd              # For DataFrame operations (if you're working with tabular data)
+
+
 def display_scatter_plot(x, y, x_label, y_label):
     plt.scatter(x, y)
     plt.xlabel(x_label)
