@@ -1,3 +1,8 @@
+def main():
+    lib_for_data_visulization()
+
+
+
 # Display scatter plot between two variables x and y 
 def lib_for_data_visulization():
     import matplotlib.pyplot as plt  # For scatter plots and visualization
@@ -31,3 +36,5 @@ def extract_numeric_data (df):
     return numric_fields 
 
 
+if __name__ == "__main__":
+    main()

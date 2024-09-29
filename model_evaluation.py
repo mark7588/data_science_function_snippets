@@ -1,3 +1,8 @@
+def main():
+    lib_for_models()
+    regression_models()
+
+
 def lib_for_models():
     from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
     from sklearn.tree import DecisionTreeRegressor
@@ -29,3 +34,6 @@ def model_evaluation(models, X_train, y_train, X_test, y_test):
         y_pred = model.predict(X_test)
         accuracy = accuracy_score(y_test, y_pred)
         print(f'{name} Accuracy: {accuracy * 100:.2f}%')
+
+if __name__ == "__main__":
+    main()
